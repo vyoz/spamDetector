@@ -17,6 +17,16 @@ pip3 install -r requirements.txt
 ```
 python3 spamDetector.py
 ```
-  
+ 
+* Train a model to detect spam for a training data file
+```
+python3 trainModel.py <train-data> <model-vec> <model-dat>
+```
+
+* Test the specified model
+```
+python3 testModel.py <model-vec> <model-dat>
+```
+
 * Reference:
     * https://blog.logrocket.com/email-spam-detector-python-machine-learning/

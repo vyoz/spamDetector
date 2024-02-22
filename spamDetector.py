@@ -3,8 +3,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn import svm
 
-spam = pd.read_csv('./spam.csv')
-z = spam['EmailText']
+spam = pd.read_csv('./data/spam-en.csv')
+z = spam['Text']
 y = spam["Label"]
 z_train, z_test,y_train, y_test = train_test_split(z,y,test_size = 0.2)
 
