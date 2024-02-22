@@ -4,18 +4,10 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn import svm
 import joblib
 import sys
+from sep_char import separate_chinese_and_english 
 
-def separate_chinese_and_english(text):
-    # Define regular expressions for Chinese and English
-    chinese_pattern = re.compile(r'([\u4e00-\u9fff])')  # Unicode range for Chinese characters
-    english_pattern = re.compile(r'([a-zA-Z0-9]+)')     # English alphabet
-
-    # Separate Chinese characters with space
-    text = chinese_pattern.sub(r'\1 ', text)
-    # Separate English words with space
-    text = english_pattern.sub(r' \1 ', text)
-
-    return text.strip()
+#english_pattern = re.compile(r'([a-zA-Z0-9]+)')     # English alphabet
+#english_pattern = re.compile(r'([a-zA-Z0-9\.\/\*\\]+)')         # English alphabet
 
 # Load the saved model from file
 def load_model(model_path):

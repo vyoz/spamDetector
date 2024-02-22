@@ -25,7 +25,7 @@ def main(train_path, vectorizer_path, model_path):
     spam = pd.read_csv(train_path)
     z = spam['Text']
     y = spam["Label"]
-    z_train, z_test, y_train, y_test = train_test_split(z, y, test_size=0.05)
+    z_train, z_test, y_train, y_test = train_test_split(z, y, test_size=0.001)
 
     # Train the model and get the model and vectorizer path
     trained_model = train_model_and_save(z_train, y_train, vectorizer_path)
