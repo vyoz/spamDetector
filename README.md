@@ -5,8 +5,8 @@ This is a simple machine learning example using SVM (Support Vector Machine) for
 Performance: overall accuracy ~98%
 
 * Requirement
-  ** python3
-  ** packages: pandas, scikit-learn(sklearn)
+    * python3
+    * packages: pandas, scikit-learn(sklearn)
 
 * Setup
 ```
@@ -19,4 +19,4 @@ python3 spamDetector.py
 ```
   
 * Reference:
-  ** https://blog.logrocket.com/email-spam-detector-python-machine-learning/
+    * https://blog.logrocket.com/email-spam-detector-python-machine-learning/
