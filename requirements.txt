@@ -1,2 +1,3 @@
-skikit-learn
+scikit-learn
 pandas
+flask
